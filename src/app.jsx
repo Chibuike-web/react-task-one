@@ -8,7 +8,7 @@ function App() {
 		<>
 			<span>Chibuike Maduabuchi </span>is a hybrid of <span>designer and developer</span>. He blends
 			<span> design and code</span> to build beautiful and <span>human-centered</span> software that
-			<span> looks good</span> and <span>feels good</span> to use
+			<span> looks good</span> and <span>feels good</span> to use.
 		</>
 	);
 	return (
