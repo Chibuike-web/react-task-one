@@ -1,12 +1,15 @@
-export default function ProfileCard({ image, name, bio }) {
+export default function ProfileCard({ image, name, title, bio }) {
 	return (
 		<main>
 			<div className="profile-card">
-				<figure>
+				<div className="profile">
 					<img src={image} alt={name} />
-				</figure>
+					<div className="profile-content">
+						<h1 className="name">{name}</h1>
+						<p className="title">{title}</p>
+					</div>
+				</div>
 				<div className="content-container">
-					<h1 className="name">{name}</h1>
 					<p className="bio">{bio}</p>
 				</div>
 			</div>

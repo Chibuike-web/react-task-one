@@ -11,44 +11,58 @@ main {
 }
 
 .profile-card {
-	max-width: 320px;
+	max-width: 400px;
 	margin: 2rem;
 	border-radius: 16px;
-	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 48px 40px -10px rgba(0, 0, 0, 0.08);
 	background-color: #fff;
-	text-align: center;
 	font-family: "Geist";
 	overflow: hidden;
+	border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.profile-card figure {
-	background: #000;
-	padding-block: 2rem;
-}
-
-.content-container {
+.profile {
+	display: flex;
 	padding: 1.5rem;
+	gap: 24px;
+	align-items: center;
+	background-color: #f6f6f6;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+	border-end-start-radius: 24px;
+	border-end-end-radius: 24px;
 }
 
-.profile-card img {
+.profile img {
 	width: 100px;
 	height: 100px;
 	object-fit: cover;
 	border-radius: 50%;
-	border: 3px solid #4f46e5;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border: 6px solid rgba(0, 0, 0, 0.02);
 }
 
-.profile-card .name {
-	margin-bottom: 0.5rem;
-	font-size: 1.25rem;
-	font-weight: bold;
-	color: #111827;
+.profile-content {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
 }
 
-.profile-card .bio {
-	margin: 0;
-	font-size: 0.95rem;
+.profile-content .name {
+	font-size: 24px;
+	text-align: left;
+	line-height: 1.2;
+	color: #1f2937;
+}
+
+.profile-content .title {
 	color: #4b5563;
-	line-height: 1.4;
+}
+
+.bio {
+	line-height: 1.5;
+	color: #6b7280;
+	padding: 1.5rem;
+}
+.bio span {
+	color: #1f2937;
+	font-weight: 600;
 }
