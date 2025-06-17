@@ -9,9 +9,8 @@ export default function ProfileCard({ image, name, title, bio }) {
 						<p className="title">{title}</p>
 					</div>
 				</div>
-				<div className="content-container">
-					<p className="bio">{bio}</p>
-				</div>
+
+				<div className="bio">{bio}</div>
 			</div>
 		</main>
 	);

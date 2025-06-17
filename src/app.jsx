@@ -1,7 +1,7 @@
 import "./app.css";
 
 import profileImage from "./assets/Profile-2.jpg";
-import ProfileCard from "./profileCard";
+import ProfileCard from "./components/ProfileCard";
 
 function App() {
 	const bio = (
